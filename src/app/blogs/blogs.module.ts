@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes} from '@angular/router';
+import { BlogsRoutingModule } from './blogs-routing.module';
 
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogComponent } from './blog/blog.component';
@@ -14,6 +15,7 @@ const blogsRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    BlogsRoutingModule,
     RouterModule.forChild(blogsRoutes)
   ],
   declarations: [
